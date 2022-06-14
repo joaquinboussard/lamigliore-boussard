@@ -1,13 +1,8 @@
-/*100% de hight al html*/
-/*position relative al html*/
-/*position absolute al footer y botom 0 */
-
 
 *{
     
     box-sizing: border-box;
-    text-decoration: none;
-  
+    text-decoration: none; 
 }
     
 body{
@@ -15,19 +10,29 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-
 }
-    
 
-h1{ font-size: 80px;}
-h2{ font-size: 40px;}
-h4{font-size: 30px;}
+h1{
+    font-size: 80px;
+}
+
+h4{
+    font-size: 30px;
+}
+
 ul{list-style: none;}
+
 header{ 
     background-color: 7b1411;
     width: 100%;
 }
-/*FIN VALORES GRAL*/ 
+
+iframe{
+    width: 700px;
+    height: 200px;
+    margin: 20px 20px;
+}
+
 
 /*NAVEGACION INDEX*/
 
@@ -40,7 +45,7 @@ header{
     border-radius: 10px;
     border: 2px solid #7b1411;
     box-shadow: 3px 2px 7px #7b1411;
-    background-color:lightyellow;
+    background-color:white;
 
 } 
 
@@ -51,38 +56,6 @@ header{
     margin: 20px;
 }
 
-#navegacion{
-    margin: 0;
-    padding: 0;
-}
-#navegacion ul{ 
-    padding: 0;
-    font-size: larger;
-    
-}
-.logos{
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 10px;
-
-    
-}
-.logos a{
-    padding: 10px 0;
-
-
-    
-}
-
-.logos img{
-    margin: 0 10px;
-}
-
-#navegacion a{
-    padding: 10px 10px;
-    color: white;
-}
 
 /*SECION PRINCIPAL*/
 
@@ -143,9 +116,6 @@ header{
     width: 150px;
 }
 
-
-
-
 .section-bebidas{
     background-color: #7b1411;
     width: 100%;
@@ -180,21 +150,51 @@ header{
 #section-speciale{
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
     height: 100vh;
-    background-image: url(../img/speciale.png);
+    background-image:url(../img/fondo66.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    filter: brightness(95%);
+    background-position: center;
+    background-color: black;
+ }
+
+.contenedor-parrafo-speciale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid;
+    width: 500px;
+    height: 350px;
+    margin: 0 60px;
+    background-color:rgb(32, 32, 32);
+    box-shadow: 2px 1px 8px white ;
 }
 
 #section-speciale h2{
     text-shadow: 1px 4px 4px #01033e;
-    color: white;
+    color: lightyellow;
     height: 50px;
+    animation: lamiglioreh1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes lamiglioreh1{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(.3);
+    }
+    40%{
+        transform: scale(.6);
+    }
+    60%{
+        transform: scale(.9);
+    }
+    80%{
+        transform: scale(1);
+    }
 }
 
 #section-speciale p{
@@ -202,8 +202,8 @@ header{
     color: white;
     margin: 20px 20px;
     font-size: x-large;
+  
 }
-
 
 /*FOOTER*/
 
@@ -211,7 +211,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(32, 32, 32);
     margin: 0;
     height: 110px;
     padding: 5px;
@@ -270,7 +270,6 @@ header{
     text-shadow: 1px 4px 5px gray;
     
 }
-
 
 .section-menu{
     display: grid;
@@ -494,33 +493,28 @@ header{
 }
 /*TERMINA MENU*/ /*TERMINA MENU*/ /*TERMINA MENU*/  /*TERMINA MENU*/  
 
-/*SECTION FORMULARIO*/ /*SECTION FORMULARIO*/ /*SECTION FORMULARIO*/ 
+/*SECTION FORMULARIO-CONTACTO*/ /*SECTION FORMULARIO-CONTACTO*/ /*SECTION FORMULARIO-CONTACTO*/ 
 
 
 #section-form{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    background-color: #7b1411;
-
+    justify-content: flex-end;
+    height: 80vh;
+    background-image: url(../img/eee.png);
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: center top;
 }
 
-
 .formulario-contacto{
-    width: 900px;
+    width: 500px;
     height: 400px;
-    margin: 50px 0;
+    margin: 0px 40px;
     border-radius: 3px;
-    
-
 }
 
 .form-contenedor{
     padding: 40px;
-    background-color: #B23531;
-    border: 2px solid white;
-
 }
 
 .form-contenedor p{
@@ -534,26 +528,22 @@ header{
     width: 100%;
     margin: 5px 0;
     padding: 5px;
-    border: 2px solid #7b1411;
-    border-radius: 10px;
-    
+    border: 2px solid black;
+    border-radius: 10px;  
 }
 
 .form-boton{
-    margin: 40px 38%;
+    margin: 30px 110px;
     width: 200px;
     height: 30px;
     background: white;
-    color: #7b1411;
+    color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: medium;
     font-weight: bolder;
-    border: 2px solid #7b1411;
-    border-radius: 10px;
-    
+    border: 2px solid black;
+    border-radius: 10px;   
 }
-
-
 
 .form-contenedor p{
     display: flex;
@@ -562,95 +552,66 @@ header{
     font-size: xx-large;
     color: white;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #B23531;
+    text-shadow: 1px 1px 1px black;
 }
 /*CONTACTO*/ /*CONTACTO*/ /*CONTACTO*/ /*CONTACTO*/
-iframe{
-    width: 90%;
-    margin: 20px 50px;
+
+
+.parrafo-form-img img{
+    margin: 0 10px;
 }
 
 
-.contenedor-contacto li{
-  margin: 20px 60px;
-  color: white;
-  font-size: x-large;
-  border-bottom: 1px solid white;
-
-
+.parrafo-form p{
+    font-size: large;
+    color: white;   
 }
 
-.contenedor-contacto{
-    width: 100%;
-    margin: 20px 0;
-}
-
-.contacto strong{
+.parrafo-form h4{
     color: white;
+    font-family: cursive;
+    text-shadow: 0px 1px 2px black;
+    animation: lamiglioreh1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;  
 }
-
-.contacto h1{
-    margin: 10px;
-    color: white;
-    animation-name: contactoh1;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-
-}
-/*Animacion H1 CONTACTO*/
-@keyframes contactoh1{
+@keyframes lamiglioreh1{
     0%{
-        transform: translate(0%);
+        transform: scale(1);
     }
-
-    25%{
-        transform: translate(25%);
+    20%{
+        transform: scale(.3);
     }
-    50%{
-        transform: translate(50%);
+    40%{
+        transform: scale(.6);
+    }
+    60%{
+        transform: scale(.9);
     }
     80%{
-        transform: translate(80%);
-    }
-    100%{
-        transform: translate(100%);
+        transform: scale(1);
     }
 }
-  
-  
 
+.parrafo-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 110px 10px;
+    height: 200px;
+    padding: 40px;
+}
 
 #body-contacto{
-    background-color: #7b1411;
-    background-repeat: no-repeat;
+    background-color: lightyellow;
+    background-repeat: repeat-x;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
-
-/*.contacto{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-*/
-
-
-/*TERMINA SECTION FORMULARIO*/ /*TERMINA SECTION FORMULARIO*/ /*TERMINA SECTION FORMULARIO*/
 
 /*SECION INFO*/ /*SECION INFO*/ /*SECION INFO*/ /*SECION INFO*/ 
-
-#body-info{
-    height: 100vh;
-    background-color: lightyellow;
-}
-
-.contenedor-info  h1{
-    color: #B23531;
-}
-.contenedor-info h4{
-    color: #B23531;
-}
 
 .footer-info{
     display: flex;
@@ -671,30 +632,149 @@ iframe{
     right: 0;
     bottom: 0;
 }
-.contenedor-footer-info{
-    height: 50%;
-    display: flex;
-    align-items: self-end; 
+
+.ubicacion-info p{
+    color: #7b1411;
+    font-size: x-large;
+    font-family: cursive;
+    text-shadow: 1px 1px black
 }
 
+
+.horarios-info h4{
+    animation: lamiglioreh1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;  
+}
+
+.horarios-info h4 strong{
+    color: #7b1411;
+    font-family: cursive;
+    margin:0;
+    text-shadow: 2px 2px 1px black;
+}
+.horarios-info p{
+    margin: 20px 0;
+}
+.horarios-info{
+    display: contents;
+}
+
+
+.parrafo-info p{
+    margin: 20px 20px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: large;
+
+}
+
+.parrafo-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-info  h1{
+    font-family: cursive;
+    color: #7b1411;
+    text-shadow: 2px 12px 10px black;
+}
+.contenedor-info h4{
+    color: #B23531;
+}
+
+.contenedor-img-info img{
+    height: 114vh;
+    width: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contenedor-info{
+    display: flex;
+    background-image: url(../img/fff.png);
+    background-repeat: no-repeat;
+    background-position:unset;
+    background-size: cover;
+   
+}
+
+
+#body-info{
+    height: 100vh;
+    background-color: lightyellow;
+}
 /*SECION INFO*//*SECION INFO*//*SECION INFO*//*SECION INFO*/
 
 
 /*SECION ENTREGA */
 
+.footer-delivery{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin:20px 0;
+    width: 100%;
+    height: 110px;
+    padding: 5px;
+
+}
+
+
 .body-delivery{
+    position: relative;
     background-color: lightyellow;
 }
 
 .section-delivery h2{
     color: #7b1411;
+    margin: 0 20px;
+}
+
+.section-delivery{
+    margin: 0 60px;
 }
 
 .main-delivery h1{
     color: #7b1411;
 }
 
+.main-delivery h1 span
+    color: #7b1411;
+    animation: h1-delivery 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes h1-delivery {
+    0%{
+        color: black;
+    }
+    50%{
+        color: #7b1411;
+    }
+    100%{
+        color: green;
+    }
+}
 
+
+
+.main-delivery{
+    display: flex;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contenedor-info-delivery{
+    margin: 0 20px;
+}
+
+.contenedor-info-delivery img{
+    margin: 0 20px;
+    border: 1px solid #7b1411;
+}
 
 
 
@@ -702,7 +782,7 @@ iframe{
 /*RESPONSIVE*/ /*RESPONSIVE*/ /*RESPONSIVE*/ /*RESPONSIVE*/
 
 
-/*DEJAR MENU RESPONSIVE*/
+/*MENU RESPONSIVE*/ /*MENU RESPONSIVE*/ /*MENU RESPONSIVE*/ /*MENU RESPONSIVE*/ 
 
 @media screen and (max-width:1200px) {
     #section-principal{
@@ -811,3 +891,191 @@ iframe{
     }
 
 }
+
+
+
+
+/* RESPONSIVE INFO */ /* RESPONSIVE INFO */  /* RESPONSIVE INFO */  
+
+@media screen and (max-width:1200px){
+
+    .contenedor-img-info img{
+        width: 400px;
+        height: 700px;
+    }
+
+    #body-info{
+        width: 1200px;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .contenedor-info{
+        width: 770px;
+    }
+    .parrafo-info{
+        width: 400px;
+    }
+    .parrafo-info h1{
+        margin:0px 10px;
+        font-size: xx-large;
+    }
+    .parrafo-info p{
+        margin: 5px;
+        font-size: medium;
+    }
+
+    .contenedor-img-info img{
+        height: 500px;
+        width: 330px;
+    }
+
+    .contenedor-img-info{
+        height: 500px;
+        width: 500px;
+    }
+
+    iframe{
+        width: 400px;
+    }
+    
+    #body-info{
+        width: 770px;
+    }
+}
+
+
+@media screen and (max-width:480px){
+ .contenedor-info{
+    width: 480px;
+    height: 602px;
+}
+.parrafo-info{
+    width: 250px;
+}
+.parrafo-info h1{
+    color: #7b1411;
+   font-size: xx-large;
+}
+.parrafo-info p{
+   font-size: small;
+}
+
+.contenedor-img-info img{
+   width: 220px;
+   height: 540px;
+}
+
+.contenedor-img-info{
+   width: 300px;
+   height: 350px;
+}
+.horarios-info{
+    display: none;
+}
+iframe{
+    display: none;
+}
+
+.ubicacion-info p{
+    color: #7b1411;
+    font-size: small;
+}
+
+.footer-info{
+    height: 60px;
+}
+
+#body-info{
+    width: 480px;
+}
+
+}
+
+
+
+@media screen and (max-width:320px){
+    .contenedor-info{
+       width: 332px;
+    }
+    .parrafo-info{
+        width: 332px;
+    }
+    .parrafo-info h1{
+       font-size:x-large;
+       margin: 10px 0;
+    }
+    .parrafo-info p{
+       font-size: small;
+    }
+    
+    
+    .contenedor-img-info{
+      display: none;
+    }
+    
+    .footer-info p{
+       font-size: x-small;
+    }
+
+    #body-info{
+        width: 332px;
+    }
+
+
+}
+
+
+/* RESPONSIVE CONTACTO */ /* RESPONSIVE CONTACTO */ /* RESPONSIVE CONTACTO */ /* RESPONSIVE CONTACTO */ 
+
+    @media screen and (max-width:1200px){
+        #body-contacto{
+            width: 1240px;
+            height: 830px;
+        }
+
+        #footer{
+            height: 200px;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        #body-contacto{
+            width: 780px;
+        }
+
+        #section-form{
+            height: 600px;
+
+        }
+
+        .parrafo-form{
+            margin: 160px 10px;
+        }
+    }
+
+    @media screen and (max-width:480px){
+        #section-form{
+            height: 780px;
+        }
+
+        #footer{
+            width: 780px;
+        }
+
+    }
+
+
+    @media screen and (max-width:480px){
+
+        #section-form{
+            height: 900px;
+        }
+
+        #footer{
+            height: 520px;
+        }
+    }
+
