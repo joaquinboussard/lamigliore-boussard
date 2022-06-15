@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
-   <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/estilo.css">
     <title>Contacto</title>
-</head>
-<header>
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
+  </head>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">Inicio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./info.html">Informacion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./entrega.html">Delivery</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./info.html">Informacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./entrega.html">Delivery</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
-<body id="body-contacto"> 
-    <main class="contacto"> 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.754778291412!2d-55.55364358517471!3d-30.893520278245465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a9ffdcb8734d2d%3A0xb2130ce58919dbfa!2sLa%20Migliore!5e0!3m2!1ses-419!2suy!4v1652851558020!5m2!1ses-419!2suy" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h1>Contacta a la Migliore</h1>
-        <div class="contenedor-contacto">
-            <li> <img src="../img/wPP.png" width="55" height="55">098291886</li>
-            <li><img src="../img/wPP.png" width="55" height="55">091076729</li>
-            <li><img src="../img/loca.png" width="55" height="55" >Ansina 547</li> 
+    </nav>
+  </header>
+  <body id="body-contacto">  
+    <main id="section-form">
+      <div class="formulario-contacto"> 
+        <form class="form-contenedor" action=""> <!--url donde se envian los datos-->
+            <p>Formulario de contacto</p>
+            <input class="form-tablas" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+            <input class="form-tablas" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+            <input class="form-tablas" type="number" name="numero" id="numero" placeholder="Ingrese su numero"> 
+            <input class="form-tablas" type="text" name="mensaje" id="mensaje" placeholder="Su mensaje">
+            <input class="form-boton" type="submit" value="Enviar">
+        </form>
+      </div>
+      <div class="parrafo-form">
+        <h4>Importante!</h4>
+        <p>Nos interesa conocerte y saber tù opinion al respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias. Recorda que tù opinion es de gran interes! </p>
+        <div class="parrafo-form-img"> 
+          <a target="_blank" href="https://wa.link/9ryy2m"> <img src="../img/wPP.png" height="50px" width="50px"></a>
+          <img src="../img/insta.png" height="50px" width="50px">
         </div>
-    </main>
-    
-    <section id="section-form">
-        <div class="formulario-contacto"> 
-            <form class="form-contenedor" action=""> <!--url donde se envian los datos-->
-                <p>Formulario de contacto</p>
-                    <input class="form-tablas" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-                    <input class="form-tablas" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
-                    <input class="form-tablas" type="number" name="numero" id="numero" placeholder="Ingrese su numero"> 
-                    <input class="form-tablas" type="text" name="mensaje" id="mensaje" placeholder="Su mensaje">
-                    <input class="form-boton" type="submit" value="Enviar">
-            </form>
-        </div>
-    </section>    
+      </div>
+    </main>   
     <footer id="footer">
-        <button id="boton-speciale"><a href="contacto.html"> Vuelve arriba</a></button>
-        <p>&copy;La Migliore 2022</p> <!--aumentar el height-->
+      <button id="boton-speciale"><a href="contacto.html"> Vuelve arriba</a></button>
+      <p>&copy;La Migliore 2022</p> <!--aumentar el height-->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
-</body>
+  </body>
 </html>
